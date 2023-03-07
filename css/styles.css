@@ -12,9 +12,10 @@ body {
 }
 .fondo {
     background-image: url(../assets/fondo.jpg);
-    width: 400vw;
+    width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
+    
 
 }
 
@@ -23,6 +24,7 @@ body {
     animation: mariomotion 15s infinite; 
 
 }
+
 
 
 @keyframes mariomotion {
@@ -47,3 +49,39 @@ body {
     150% {top: 410px; left: 800px; rotate: 0deg;}
     
 }
+@media screen and (min-width: 100px) and (max-width: 800px) {
+    body{
+        background-color: pink;
+    }
+    .fondo {
+        background-image: url(../assets/fondo.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    
+    }
+    @keyframes mariomotion {
+        0%  {top: 0px; left: 0px;}
+        40% {top: 240px; left: 0px;}
+        45% {left: 30px; top: 240px;}
+        50% {top: 200px; }
+        52% {left: 35px;}
+        54% {top: 360px; left: 165px; rotate: 0deg;}
+        58% {top: 240px; left: 190px; rotate: 0deg;}
+        63% {left: 240px; top: 240px; rotate: 0deg;}
+        65% {top: 380px; left: 270px; rotate: 0deg;}
+        70% {top: 330px; left: 360px; rotate: 0deg;}
+        72% {top: 310px; left: 400px; rotate: 0deg;}
+        74% {top: 240px; left: 440px; rotate: 0deg;} 
+        77% {top: 200px; rotate: 0deg;}
+        80% {top: 240px; left: 500px; rotate: 0deg;}
+        85% {top: 240px; left: 560px; rotate: 0deg;}
+        90% {top: 220px; left: 560px; rotate: 180deg;}
+        95% {top: 240px; left: 560px; rotate: 0deg;}
+        100% {top: 240px; left: 600px; rotate: 0deg;}
+        150% {top: 240px; left: 800px; rotate: 0deg;}
+    }
+    
+    }
