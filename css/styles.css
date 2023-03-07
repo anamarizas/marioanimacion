@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    color: darkred;
+    
+}
+.fondo {
+    background-image: url(../assets/fondo.jpg);
+    width: 400vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+
+.mariomotion {
+    position: relative;
+    animation: mariomotion 15s infinite; 
+
+}
+
+
+@keyframes mariomotion {
+    0%  {top: 0px; left: 0px;}
+    40% {top: 410px; left: 0px;}
+    45% {left: 76px; top: 410px;}
+    50% {top: 380px; }
+    52% {left: 95px;}
+    54% {top: 360px; left: 165px; rotate: 0deg;}
+    58% {top: 410px; left: 190px; rotate: 0deg;}
+    63% {left: 240px; top: 410px; rotate: 0deg;}
+    65% {top: 380px; left: 270px; rotate: 0deg;}
+    70% {top: 330px; left: 360px; rotate: 0deg;}
+    72% {top: 310px; left: 400px; rotate: 0deg;}
+    74% {top: 410px; left: 440px; rotate: 0deg;} 
+    77% {top: 200px; rotate: 0deg;}
+    80% {top: 410px; left: 500px; rotate: 0deg;}
+    85% {top: 410px; left: 560px; rotate: 0deg;}
+    90% {top: 220px; left: 560px; rotate: 180deg;}
+    95% {top: 410px; left: 560px; rotate: 0deg;}
+    100% {top: 410px; left: 600px; rotate: 0deg;}
+    150% {top: 410px; left: 800px; rotate: 0deg;}
+    
+}
